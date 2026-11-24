@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#edf5f1"><meta name="description" content="잠깐 쉬어가도 괜찮아. 기분에 맞는 짧은 위로와 오늘의 운세."><title>마음 한 칸 · 잠깐의 쉼</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="brand" href="./"><span class="brand-icon">✳</span> 마음 한 칸</a><button id="collection" class="quiet">♡ <span>모아둔 마음</span> <b id="count">0</b></button></header>
+<main>
+<div class="intro"><span class="eyebrow">나를 위한 아주 작은 쉬는 시간</span><h1>잠깐 쉬어가도<br>괜찮아<span class="dot">.</span></h1><p>바쁜 하루에, 네 마음이 쉴 자리 한 칸.</p></div>
+<section class="mood-section" aria-labelledby="mood-title"><h2 id="mood-title">지금, 어떤 기분이야?</h2><div class="moods" role="group" aria-label="오늘의 기분"><button data-mood="good" aria-pressed="true" class="selected"><span>🙂</span>괜찮아</button><button data-mood="anxious" aria-pressed="false"><span>😟</span>불안해</button><button data-mood="tired" aria-pressed="false"><span>😴</span>지쳤어</button><button data-mood="sad" aria-pressed="false"><span>🥲</span>속상해</button></div></section>
+<section class="fortune" id="fortune"><div class="card-top"><span>오늘의 작은 응원</span><span id="date"></span></div><div class="clover" aria-hidden="true"><i></i><i></i><i></i><i></i><span></span></div><div id="card-content" aria-live="polite"><h2>오늘은 어떤 행운이<br>너를 기다릴까?</h2><p>네 기분에 맞는 한마디도 함께 준비했어.</p></div><button class="primary" id="draw">✧ 오늘의 운세 뽑기</button><div class="actions" id="actions" hidden><button id="save">♡ 마음에 담기</button><button id="image">이미지 저장</button><button id="share">공유</button></div></section>
+<p class="footnote">운세는 가볍게, 응원은 진심으로.</p>
+<details class="situations"><summary>이런 날엔, 이런 한마디</summary><div><button data-situation="before">시험 전</button><button data-situation="after">시험 후</button><button data-situation="burnout">쉬고 싶은 날</button></div></details>
+</main><footer>오늘도 여기까지 온 너를 응원해. <span>마음 한 칸</span></footer>
+<dialog id="saved-dialog"><div class="dialog-head"><h2>모아둔 마음</h2><button id="close-dialog" aria-label="닫기">✕</button></div><p class="local-note">이 브라우저에만 저장돼요.</p><div id="saved-list"></div></dialog><div class="toast" role="status" id="toast"></div><script src="app.js"></script></body></html>
